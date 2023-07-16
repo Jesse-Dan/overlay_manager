@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// The `OverlayManagerInit` class is responsible for initializing the `bot_toast` package and setting it up as the builder and navigator observer for the Flutter application.
 ///
 /// To use this class, you need to import the `OverlayManagerInit` class from the `package:bot_toast/bot_toast.dart` file.
-/// This class extends the `BotToast` class and provides the necessary setup for the `bot_toast` package.
+/// This class provides the necessary setup for the `bot_toast` package.
 ///
 /// ## Example
 ///
@@ -21,7 +21,7 @@ import 'package:flutter/material.dart';
 ///  builder: OverlayManagerInit.builder,
 ///  navigatorObservers: [OverlayManagerInit.navigatorObserver])
 /// ```
-class OverlayManagerInit extends BotToast {
+class OverlayManagerInit {
   /// The builder for the `MaterialApp` widget.
   static Widget Function(BuildContext, Widget?)? builder = BotToastInit();
 

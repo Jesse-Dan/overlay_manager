@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'systems/overlay_manager.dart';
+import 'initializer.dart';
+import 'overlay_manager.dart';
 
 /// The `OverlayManager` class provides a simplified interface for managing overlays using the `Overlayer` class.
 ///
@@ -62,4 +62,6 @@ class OverlayManager {
   static void dismissOverlay() {
     overlayer = Overlayer.closeOverlay();
   }
+
+  final overlayManagerInit = OverlayManagerInit;
 }
